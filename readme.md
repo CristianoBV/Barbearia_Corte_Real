@@ -2,6 +2,12 @@
 
 Sistema de agendamentos de horários de Barber Shop Corte Real, desenvolvida em React com API em NodeJs e BD Postgres
 
+<h4 align="center">
+ ⚡️ Desenvolvendo...
+</h4>
+
+## 💻 Sobre o projeto
+
 # RESTful com Node.js, Postgres
 
 > Projeto sendo desenvolvido para a barber Shop Corte Real, Sistema de cadastro de horários para a barbearia, desenvolvida em React com seu backend desenvolvido em, NodeJs com conexão ao Banco de Dados em Postgres
@@ -19,75 +25,103 @@ https://github.com/bvieira1/API_em-NodeJs_Barber
 
 APPLICATION IN CRUD
 
-## Available Scripts
+## 🛠 Tecnologias
 
-In the project directory, you can run:
+As seguintes ferramentas foram usadas na construção do projeto:
 
-### `yarn start`
+- [React][reactjs]
+- [NodeJs][nodejs]
+- [Postgresql][postgresql]
+- [MongoDB][mongodb]
+- [Redis][redis]
+- [Eslint][eslint]
+- [Prettier][prettier]
+- [AmazonAWS][amazonaws]
+- [Yarn][yarn]
+- [Vscode][vscode]
+- [Vceditconfig][vceditconfig]
+- [Vceslint][vceslint]
+- [License][license]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Como executar o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Front End (https://github.com/CristianoBV/Barbearia_Corte_Real)
 
-### `yarn test`
+### Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js][nodejs].
+Além disto é bom ter um editor para trabalhar com o código como [VSCode][vscode]
 
-### `yarn build`
+### 🧭 Rodando a aplicação web (Front End)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone este repositório
+$ git clone https://github.com/CristianoBV/Barbearia_Corte_Real
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Vá para a pasta server
+$ cd web
 
-### `yarn eject`
+# Instale as dependências
+$ yarn install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# O servidor inciará na porta:3333 - acesse http://localhost:3333
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🚀 Como executar o projeto (Back End)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Back End (https://github.com/CristianoBV/API_em-NodeJs_Barber)
 
-## Learn More
+### Pré-requisitos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js][nodejs].
+Além disto é bom ter um editor para trabalhar com o código como [VSCode][vscode]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🧭 Rodando a aplicação web (Front End)
 
-### Code Splitting
+```bash
+# Clone este repositório
+$ git clone https://github.com/CristianoBV/API_em-NodeJs_Barber
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Vá para a pasta server
+$ cd ws
 
-### Analyzing the Bundle Size
+# Instale as dependências
+$ yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Instale as Migrations
+$ ❯ yarn typeorm migration:run
 
-### Making a Progressive Web App
+# Use o Docker para gerar os BD
+$ Certifique que tenha os BD Postgresql, MongoDB e Readis instalados;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Execute a aplicação em modo de desenvolvimento
+$ yarn dev:server
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# O servidor inciará na porta:3000 - acesse http://localhost:3000
+```
 
 ## 📝 Licença
 
 Este projeto esta sobe a licença.
 
 Feito com ❤️ por cristiano Borges 👋🏽 [Entre em contato!](https://www.linkedin.com/in/cristianobv/)
+
+[eslint]: https://eslint.org/
+[prettier]: https://prettier.io/
+[reactjs]: https://reactjs.org
+[nodejs]: https://nodejs.org
+[postgresql]: https://www.postgresql.org/
+[mongodb]: https://www.mongodb.com/
+[redis]: https://aws.amazon.com/pt/elasticache/what-is-redis/
+[amazonaws]: https://aws.amazon.com/pt/?nc2=h_lg
+[yarn]: https://yarnpkg.com/
+[vscode]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[license]: https://github.com/CristianoBV/privacy_policy
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint

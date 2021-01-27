@@ -1,6 +1,5 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Banner from '../../assets/images/background/bg-7.jpg';
-import { darken, shade } from 'polished';
 
 export const Container = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -25,11 +24,24 @@ export const Logo = styled.img`
   }
 `;
 
+const appearFromLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
 export const Content = styled.div`
   height: calc(90vh - 80px);
   max-height: 100%;
   width: 100vw;
   padding: 0 calc((80vw - 1300px) / 2);
+
+  animation: ${appearFromLeft} 1s;
 `;
 
 export const Items = styled.div`
@@ -61,30 +73,4 @@ export const HeaderH1 = styled.h1`
 export const HeaderP = styled.p`
   font-size: clamp(2.5rem, 2, 5vw, 3rem);
   margin-bottom: 2rem;
-`;
-
-export const Btn = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-size: 1.7rem;
-  padding: 1.6rem 4rem;
-  border: none;
-  border-radius: 12px;
-  background: var(--color-login);
-  color: var(--color-white);
-  transition: 0.2s ease-out;
-
-  > svg {
-    width: 18px;
-    margin-left: 10px;
-  }
-
-  &:hover {
-    background: ${darken(0.2, '#f5426c')};
-    color: ${shade(1.4, '#fff')};
-    transition: 0.2s ease-out;
-    cursor: pointer;
-  }
 `;

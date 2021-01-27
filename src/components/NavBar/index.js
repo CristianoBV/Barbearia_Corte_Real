@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Togle from './Toggle';
-import Logo_dark from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logo_header.png';
 
-import { Nav, NavLink, NavIcon, Bars, StyledBurger } from './styles';
+import { Link } from 'react-router-dom';
+
+import { Nav, StyledBurger, Btn } from './styles';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +16,7 @@ const NavBar = () => {
         <div />
       </StyledBurger>
       <Togle open={open} />
-      <Nav fixedTop={true}>
+      <Nav>
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -22,25 +24,20 @@ const NavBar = () => {
           <li>
             <a href="services.html">Services</a>
           </li>
-
-          <li className="logo_pos">
-            <img
-              className="c_logo_light"
-              src={Logo_dark}
-              alt="Logo"
-              style={{ marginTop: -15 }}
-            />
-          </li>
-
           <li>
-            <a href="about.html">About Us</a>
+            <img src={Logo} alt="Logo" style={{ marginTop: -15 }} />
           </li>
-
+          <li>
+            <a href="#about">About Us</a>
+          </li>
           <li>
             <a href="contact.html">Contact</a>
           </li>
         </ul>
       </Nav>
+      <Btn>
+        <Link to="/sigin"> Barbeiros</Link>
+      </Btn>
     </>
   );
 };

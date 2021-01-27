@@ -13,12 +13,36 @@ export const Container = styled.div`
   align-items: center;
 `;
 
+const appearFromLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const appearFromRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  align-items: center;
+  align-items: unset;
   align-content: center;
+
+  animation: ${appearFromLeft} 1.5s;
 `;
 
 export const Heading = styled.h1`
@@ -26,6 +50,8 @@ export const Heading = styled.h1`
   text-align: center;
   margin-bottom: 5rem;
   color: #fff;
+
+  animation: ${appearFromRight} 1.5s;
 `;
 
 export const ProductCard = styled.div`

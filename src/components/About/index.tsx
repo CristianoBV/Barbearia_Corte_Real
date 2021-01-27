@@ -1,9 +1,6 @@
 import React from 'react';
 import CardData from '../../services/cardData.json';
 
-import Pic_3 from '../../assets/images/misc/pic_3.jpg';
-import Pic_4 from '../../assets/images/misc/pic_4.jpg';
-
 import {
   Container,
   Wrapper,

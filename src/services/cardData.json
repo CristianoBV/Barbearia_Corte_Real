@@ -17,5 +17,44 @@
             "title": "Navalha afiada e cerveja gelada!",
             "desc": "Comece a semana com muito estilo, venha nos visitar e sinta-se em casa."
         }
+    ],
+
+
+    "priceData": [{
+            "title": "Corte de Cabelo",
+            "price": "R$ 25,00"
+        },
+        {
+            "title": "Barba",
+            "price": "R$ 20,00"
+        },
+        {
+            "title": "Sobrancelha",
+            "price": "R$ 10,00"
+        },
+        {
+            "title": "Pigmentação",
+            "price": "R$ 10,00"
+        },
+        {
+            "title": "Contorno",
+            "price": " R$ 8,00 "
+        },
+        {
+            "title": "Luzes",
+            "price": "R$ 55,00"
+        },
+        {
+            "title": "Platinado",
+            "price": "R$ 70,00"
+        },
+        {
+            "title": "Combo cabelo + barba + sobrancelha ",
+            "price": "R$ 40,00"
+        },
+        {
+            "title": "Combo cabelo + sobrancelha",
+            "price": "R$ 30,00"
+        }
     ]
 }

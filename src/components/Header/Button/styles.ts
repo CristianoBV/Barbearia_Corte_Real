@@ -7,7 +7,7 @@ export const Container = styled.button`
   height: 56px;
   border-radius: 10px;
   border: 0;
-  color: var(--color-gray-complement2);
+  color: var(--color-secondary);
   width: 100vw;
   max-width: 35%;
   font-size: clamp(2rem, 2.5vw, 2.4rem);
@@ -19,6 +19,7 @@ export const Container = styled.button`
   display: flex;
   padding: 0 5px;
   box-shadow: 3px 2px #fff;
+  transition: 0.2s ease-in-out;
 
   @media screen and (max-width: 400px) {
     max-width: 60%;
@@ -30,8 +31,9 @@ export const Container = styled.button`
   }
 
   &:hover {
+    transition: 0.2s ease-in-out;
     background: ${shade(0.2, '#ff9000')};
-    box-shadow: 3px 2px #d9deda;
-    color: #fff;
+    color: ${shade(0.4, '#312E38')};
+    box-shadow: 3px 2px #312e38;
   }
 `;
