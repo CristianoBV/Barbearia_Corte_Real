@@ -106,10 +106,6 @@ $ yarn dev:server
 # O servidor inciará na porta:3000 - acesse http://localhost:3000
 ```
 
-## 📝 Licença
-
-Este projeto esta sobe a licença.
-
 Feito com ❤️ por cristiano Borges 👋🏽 [Entre em contato!](https://www.linkedin.com/in/cristianobv/)
 
 [eslint]: https://eslint.org/
