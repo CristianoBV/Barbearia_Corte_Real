@@ -4,3 +4,10 @@ export const router = [
   { title: 'Galeria', link: '/' },
   { title: 'Contact', link: '/' },
 ];
+
+export const item = [
+  { id: 'Home', subtitle: '/', title: '' },
+  { id: 'Home', subtitle: '/', title: '' },
+  { id: 'Home', subtitle: '/', title: '' },
+  { id: 'Home', subtitle: '/', title: '' },
+];

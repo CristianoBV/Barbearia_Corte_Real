@@ -19,19 +19,21 @@ const NavBar = () => {
       <Nav>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="services.html">Services</a>
+            <a href="/" id="gallery">
+              Galeria
+            </a>
           </li>
           <li>
             <img src={Logo} alt="Logo" style={{ marginTop: -15 }} />
           </li>
           <li>
-            <a href="#about">About Us</a>
+            <a href="#about">Sobre Nós</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contato</a>
           </li>
         </ul>
       </Nav>

@@ -60,7 +60,8 @@ const DownApp: React.FC = () => {
                       Barbeiros
                     </h6>
                     <p>
-                      Siba quais horários estão vagos de seu barbeiro preferido!
+                      Saiba quais horários estão vagos de seu barbeiro
+                      preferido!
                     </p>
                   </IconsText>
                 </Icons>

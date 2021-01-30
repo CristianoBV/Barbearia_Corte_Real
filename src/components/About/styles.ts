@@ -43,6 +43,13 @@ export const Wrapper = styled.div`
   align-content: center;
 
   animation: ${appearFromLeft} 1.5s;
+
+  @media screen and (max-width: 859px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Heading = styled.h1`

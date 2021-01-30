@@ -1,11 +1,12 @@
 import styled, { keyframes } from 'styled-components';
 import Bg from '../../assets/images/background/price1.png';
+import { shade } from 'polished';
 
 export const Container = styled.section`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url(${Bg}) top fixed;
-  /* background: url(${Bg}) top fixed; */
   padding: 90px 0 90px 0;
+  display: flex;
 `;
 
 const appearFromLeft = keyframes`
@@ -84,22 +85,57 @@ export const ServiceC3 = styled.div`
   width: 5%;
 `;
 
-// .sub-item-service .c1{
-//   font-weight:bold;
-//   color:#222;
-//  }
+export const Video = styled.div`
+  position: relative;
+  display: flex;
+  z-index: 9999;
+  justify-content: start;
+  align-items: center;
+  top: 20rem;
+  width: 30px;
 
-// .sub-item-service .c3{
-// 	font-weight:bold;
-// 	text-align:right;
-// 	color:#333;
-//  }
+  @media screen and (max-width: 575px) {
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    margin-bottom: 4rem;
+  }
+`;
 
-// .sub-item-service .c1,.c3{
-//   white-space: nowrap;
-//   width:5%;
-// }
+export const IconPlay = styled.div`
+  border: 2px solid var(--color-secondary);
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  > svg {
+    cursor: pointer;
+    font-size: 15rem;
+    color: var(--color-primary);
+    transition: 0.2s ease-in-out;
+  }
+  &:hover {
+    > svg {
+      transition: 0.2s ease-in-out;
+      color: ${shade(0.4, '#ff9000')};
+    }
+    transition: 0.2s ease-in-out;
+    border: 2px solid var(--color-white);
+  }
 
-// .sub-item-service .c2{
-//   border-bottom:dashed 1px #aaa;
-// }
+  @media screen and (max-width: 575px) {
+    > svg {
+      cursor: pointer;
+      font-size: 10rem;
+      color: var(--color-primary);
+      transition: 0.2s ease-in-out;
+    }
+    &:hover {
+      > svg {
+        transition: 0.2s ease-in-out;
+        color: ${shade(0.4, '#ff9000')};
+      }
+      transition: 0.2s ease-in-out;
+      border: 2px solid var(--color-white);
+    }
+  }
+`;

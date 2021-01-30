@@ -9,7 +9,6 @@ import {
   SideBarLink,
   SideBtnWrap,
   SideBarRoute,
-  SideBarDelivery,
 } from './styles';
 
 const SideBar: React.FC = () => {
@@ -25,10 +24,6 @@ const SideBar: React.FC = () => {
           </SideBarLink>
         ))}
       </SideBarMenu>
-      {/* <SideBarDelivery>
-        <h1>Delivery</h1>
-        <img src={Delivery} alt="Delivery" />
-      </SideBarDelivery> */}
       <SideBtnWrap>
         <SideBarRoute to="/">
           <FaPhoneVolume />
