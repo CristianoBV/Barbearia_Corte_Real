@@ -3,14 +3,24 @@ import { NavLink as Link } from 'react-router-dom';
 import { FaHamburger } from 'react-icons/fa';
 import { darken, shade } from 'polished';
 
+export const Container = styled.div`
+  .active {
+    background: rgba(0, 0, 0, 0.4);
+    background-attachment: fixed;
+  }
+`;
+
 export const Nav = styled.nav`
-  position: relative;
-  top: 30px;
+  z-index: 99999999;
+  position: fixed;
+  width: 100vw;
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex: 1;
+  background: transparent;
 
   ul {
     display: flex;
@@ -116,13 +126,14 @@ export const NavIcon = styled.div`
 export const Bars = styled(FaHamburger)`
   font-size: 2rem;
   transform: translate(-50%, -15%);
+  position: fixed;
 `;
 
 export const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 25px;
+  top: -25px;
   left: -10px;
   float: right;
   z-index: 999999;
@@ -152,33 +163,5 @@ export const StyledBurger = styled.div`
     &:nth-child(3) {
       transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
-  }
-`;
-
-export const Btn = styled.div`
-  display: flex;
-  position: relative;
-  float: right;
-  top: 0;
-  top: -50px;
-  padding: 3px 8rem;
-
-  > a {
-    color: var(--color-primary);
-    font-size: 1.9rem;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    transition: 0.2s ease-in-out;
-
-    &:hover {
-      color: ${darken(0.1, '#ff9000')};
-      transition: 0.2s ease-in-out;
-    }
-  }
-
-  @media screen and (max-width: 1180px) {
-    display: none;
   }
 `;

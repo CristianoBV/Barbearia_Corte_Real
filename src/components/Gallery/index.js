@@ -19,7 +19,7 @@ const GalleryImages = () => {
     setViewerIsOpen(false);
   };
   return (
-    <Container id="#gallery">
+    <Container id="gallery">
       <div>
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>

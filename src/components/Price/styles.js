@@ -30,7 +30,7 @@ const appearFromRight = keyframes`
     transform: translateX(0);
   }
 `;
-export const TextCenter = styled.h1`
+export const TextCenter = styled.div`
   text-align: center;
 
   animation: ${appearFromRight} 1.5s;
@@ -39,21 +39,21 @@ export const Title = styled.h1`
   color: var(--color-primary);
   top: 30px;
 `;
-export const Wrapper = styled.h1`
+export const Wrapper = styled.div`
   border: solid 3px rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin-top: 20px;
   padding: 30px;
   animation: ${appearFromLeft} 1.5s;
 `;
-export const Spacer = styled.h1`
+export const Spacer = styled.div`
   width: 100%;
   height: 30px;
   display: block;
   clear: both;
 `;
 
-export const Service = styled.h1`
+export const Service = styled.div`
   display: table;
   font-size: 14px;
   width: 100%;

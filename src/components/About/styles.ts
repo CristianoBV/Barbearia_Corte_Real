@@ -71,7 +71,7 @@ export const ProductImg = styled.img`
   height: 300px;
   min-width: 400px;
   max-width: 100%;
-  box-shadow: 8px 8px var(--color-primary);
+  box-shadow: 3px 3px var(--color-primary);
   object-fit: cover;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;

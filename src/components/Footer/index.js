@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { router } from '../../services/router';
 import {
   FaFacebook,
   FaInstagram,
@@ -11,110 +10,187 @@ import {
   FaMailBulk,
 } from 'react-icons/fa';
 
-import Logo from '../../assets/logoMobile.png';
+import LogoImg from '../../assets/logoMobile.png';
 
 import {
   Container,
-  LogoContent,
-  Intro,
-  SocialMenu,
-  FooterLogo,
   Widget,
-  FooterContact,
-  Startup,
+  WidgetTitle,
+  Content,
+  Schedule,
+  Logo,
+  Entry,
+  EntryContent,
+  EntryTitle,
+  EntryMeta,
+  Address,
+  SocialMenu,
+  Copyright,
 } from './styles';
 
 const Footer = () => {
   return (
-    <Container>
-      <div class="container">
-        <div class="row">
-          <LogoContent className="col">
-            <Intro>
-              <FooterLogo>
-                <Link to="/">
-                  <img src={Logo} alt="" />
-                </Link>
-                <p>Siga nossas redes sociais</p>
-                <SocialMenu>
-                  <div class="social-menu">
+    <>
+      <Container id="contact">
+        <Widget>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <Content>
+                  <Logo src={LogoImg} alt="logo" />
+                  <p>
+                    Qualidade existe quando "Se atenta aos mínimos detalhes".
+                  </p>
+                  <Schedule>
                     <ul>
+                      <h3>Confira nossos horários.</h3>
                       <li>
-                        <Link to="/">
-                          <FaFacebook />
-                        </Link>
+                        Segunda - Sabado <span>9hs : 20hs</span>
                       </li>
                       <li>
-                        <Link to="/">
-                          <FaInstagram />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <FaYoutube />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <FaLinkedin />
-                        </Link>
+                        Intervalo <span>12hs : 14hs</span>
                       </li>
                     </ul>
-                  </div>
-                </SocialMenu>
-              </FooterLogo>
-            </Intro>
-          </LogoContent>
+                  </Schedule>
+                </Content>
+              </div>
 
-          <div class="col">
-            {' '}
-            <Widget>
-              <h4 className="footer-widget__title">Menu</h4>
-              <ul>
-                {router.map((item, index) => (
-                  <li to={item.link} key={index}>
-                    <Link to="/">{item.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </Widget>
-          </div>
-          <div class="col">
-            {' '}
-            <FooterContact>
-              <h4>Contato</h4>
-              <ul>
-                <li>
-                  <span>
-                    <FaAddressBook />
-                    Av Cristiano Kraemer, 1926
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    <FaPhone />
-                    51 985553870
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    <FaMailBulk />
-                    cons@email.com
-                  </span>
-                </li>
-              </ul>
-            </FooterContact>
-          </div>
-        </div>
-      </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <WidgetTitle>
+                  <h5>Estilos de corte</h5>
+                </WidgetTitle>
+                <Content>
+                  <Entry>
+                    <div>
+                      <Link to="/">
+                        <img
+                          src="https://demo.zytheme.com/hairy/assets/images/blog/thumb/5.jpg"
+                          alt="entry"
+                        />
+                      </Link>
+                    </div>
+                    <EntryContent>
+                      <EntryTitle>
+                        <Link to="/">
+                          Essential barbering tips you need to know before you
+                          start
+                        </Link>
+                      </EntryTitle>
+                      <EntryMeta>
+                        <span>Nov 09, 2017</span>
+                      </EntryMeta>
+                    </EntryContent>
+                  </Entry>
 
-      <Startup>
-        <p>Copyright © 2019. All right reserved</p>
-      </Startup>
-      <button className="scroll-top" id="scroll-top">
-        <i className="ion-android-arrow-up" />
-      </button>
-    </Container>
+                  <Entry>
+                    <div>
+                      <Link to="/">
+                        <img
+                          src="https://demo.zytheme.com/hairy/assets/images/blog/thumb/4.jpg"
+                          alt="entry"
+                        />
+                      </Link>
+                    </div>
+                    <EntryContent>
+                      <EntryTitle>
+                        <Link to="/">
+                          What are the 360 waves? and how you can get them
+                        </Link>
+                      </EntryTitle>
+                      <EntryMeta>
+                        <span>Oct 30, 2017</span>
+                      </EntryMeta>
+                    </EntryContent>
+                  </Entry>
+
+                  <Entry>
+                    <div>
+                      <Link to="/">
+                        <img
+                          src="https://demo.zytheme.com/hairy/assets/images/blog/thumb/3.jpg"
+                          alt="entry"
+                        />
+                      </Link>
+                    </div>
+                    <EntryContent>
+                      <EntryTitle>
+                        <Link to="#">
+                          Discover what is the best haircut for your face shape?
+                        </Link>
+                      </EntryTitle>
+                      <EntryMeta>
+                        <span>Oct 19, 2017</span>
+                      </EntryMeta>
+                    </EntryContent>
+                  </Entry>
+                </Content>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <WidgetTitle>
+                  <h5>Get In Touch</h5>
+                </WidgetTitle>
+                <Content>
+                  <Address>
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <FaAddressBook /> 1220 Petersham town, Wardll St New
+                        South Wales Australia PA 6550.
+                      </li>
+                      <li>
+                        <FaPhone /> (04) 491 570 110
+                      </li>
+                      <li>
+                        <FaMailBulk /> contact@zytheme.com
+                      </li>
+                    </ul>
+                    <SocialMenu>
+                      <div className="social-menu">
+                        <ul>
+                          <li>
+                            <Link to="/">
+                              <FaFacebook />
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/">
+                              <FaInstagram />
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/">
+                              <FaYoutube />
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/">
+                              <FaLinkedin />
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </SocialMenu>
+                  </Address>
+                </Content>
+              </div>
+            </div>
+          </div>
+        </Widget>
+
+        <Copyright>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6">
+                <span>© 2021, Todos os direitos reservados.</span>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 text-right">
+                <span> BVWEB - Entre em contato.</span>
+              </div>
+            </div>
+          </div>
+        </Copyright>
+      </Container>
+    </>
   );
 };
 

@@ -3,8 +3,7 @@ import { FaPlay } from 'react-icons/fa';
 import ModalVideo from 'react-modal-video';
 
 import Logo from '../../assets/images/logo.png';
-
-import PriceData from '../../services/cardData.json';
+import { price } from '../../services/cardData';
 
 import {
   Container,
@@ -25,9 +24,9 @@ const Price = () => {
 
   return (
     <Container>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
             <Video>
               <React.Fragment>
                 <ModalVideo
@@ -37,15 +36,13 @@ const Price = () => {
                   videoId="RUXAQw17qQU"
                   onClose={() => setOpen(false)}
                 />
-
                 <IconPlay>
                   <FaPlay onClick={() => setOpen(true)} />
                 </IconPlay>
               </React.Fragment>
             </Video>
           </div>
-          <div class="col-sm">
-            {' '}
+          <div className="col-sm">
             <TextCenter>
               <Title>Tabela de valores</Title>
             </TextCenter>
@@ -56,8 +53,8 @@ const Price = () => {
 
               <Spacer></Spacer>
 
-              {PriceData.priceData.map((item, i) => (
-                <Service>
+              {price.map((item, index) => (
+                <Service key={index}>
                   <ServiceC1>{item.title}</ServiceC1>
                   <ServiceC2></ServiceC2>
                   <ServiceC3>{item.price}</ServiceC3>
@@ -67,6 +64,7 @@ const Price = () => {
           </div>
         </div>
       </div>
+
       {/* <div className="container">
         <div className="row">
           <div class="col-sm-6">

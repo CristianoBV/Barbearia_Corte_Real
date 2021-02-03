@@ -1,5 +1,5 @@
 import React from 'react';
-import CardData from '../../services/cardData.json';
+import { card } from '../../services/cardData';
 
 import {
   Container,
@@ -14,11 +14,11 @@ import {
 
 const About: React.FC = () => {
   return (
-    <Container>
+    <Container id="about">
       <Heading>Conheça nosso ambiente</Heading>
       <Wrapper>
-        {CardData.cardData.map((item, i) => (
-          <ProductCard>
+        {card.map((item, index) => (
+          <ProductCard key={index}>
             <ProductImg src={item.img} alt={item.alt} />
             <ProductInfo>
               <ProductTitle>{item.title}</ProductTitle>

@@ -5,9 +5,12 @@ export const Container = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(${Banner});
   background-attachment: fixed;
+  width: 100vw;
   height: 100vh;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: 0.1 ease-in-out;
 `;
 
 export const Logo = styled.img`
@@ -36,7 +39,7 @@ const appearFromLeft = keyframes`
 `;
 
 export const Content = styled.div`
-  height: calc(90vh - 80px);
+  height: calc(90vh - 10px);
   max-height: 100%;
   width: 100vw;
   padding: 0 calc((80vw - 1300px) / 2);
