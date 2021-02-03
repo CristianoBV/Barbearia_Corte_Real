@@ -43,7 +43,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Vceslint][vceslint]
 - [License][license]
 
-## 🚀 Como executar o projeto
+## ⚡️ Como executar o projeto
 
 1. Front End (https://github.com/CristianoBV/Barbearia_Corte_Real)
 
@@ -72,7 +72,7 @@ $ yarn start
 # O servidor inciará na porta:3333 - acesse http://localhost:3333
 ```
 
-## 🚀 Como executar o projeto (Back End)
+## ⚡️ Como executar o projeto (Back End)
 
 1. Back End (https://github.com/CristianoBV/API_em-NodeJs_Barber)
 
